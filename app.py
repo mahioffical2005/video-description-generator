@@ -189,7 +189,7 @@ custom_css = """
 .output-box { border-radius: 8px; }
 """
 
-with gr.Blocks(title="Video Description Generator", css=custom_css) as demo:
+with gr.Blocks(title="Video Description Generator") as demo:
     gr.Markdown(
         """
         # 🎬 Video Description Generator
@@ -213,4 +213,5 @@ with gr.Blocks(title="Video Description Generator", css=custom_css) as demo:
     )
 
 if __name__ == "__main__":
-    demo.launch()
+    demo.launch(css=custom_css)
+
